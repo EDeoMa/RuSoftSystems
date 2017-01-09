@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta charset="UTF-8">
+	<title>RuSoftSystems</title>
+</head>
+<body>
+	<div class="menublock">
+		<div class="button" id="main"><p>RuSoftSystems</p></div>
+		<div class="button" id="systems"><p>Системы</p></div>
+		<div class="button" id="software"><p>Программы</p></div>
+		<div class="button" id="contacts"><p>Контакты</p></div>
+	</div>
+	<div class="mainblock">
+		<div class="scrollpage" id="MainBlock">
+			<div class="fixheight"></div>
+			<div class="other" style="background:rgba(0,0,0,0.5)">
+				<p style="font-size:60pt; margin-top: 2%; color:white">RuSoftSystems</h1>
+				<h1 style="font-size:40pt; color:white">Аутсорсинг IT-услуг в Москве</h1>
+				<h2 style="font-size:30pt; width:65%; margin-left: 17.5%; margin-top: 15%; color: white ">Мы обеспечим Вас лучшим инструментом для ведения бизнеса</h2>
+			</div>
+		</div>
+		<div class="scrollpage" id="SystemsBlock">
+			<div class="fixheight"></div>
+			<div class="other">
+				<h1><p>Мы работаем с системами на базе</p></h1>
+				<div class="choosebutton" style="margin-left: 7.5%""><h1 style="margin-bottom: 0%"">Windows</h1>
+					<table>
+						<tr>
+							<td>
+								<ul>
+									<li>Windows XP</li>
+									<li>Windows Server 2003</li>
+									<li>Windows Vista</li>
+									<li>Windows Server 2008</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>Windows 7</li>
+									<li>Windows 8.1</li>
+									<li>Windows Server 2012</li>
+									<li>Windows 10</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td><p>Плюсы систем на базе Windows</p></td>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li>Простота администрированиия и поддержки системы</li>
+									<li>Приятный внешний вид</li>
+									<li>Поддерживается огромным количеством программ</li>
+									<li>Широкая поддержка оборудования</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td><p>Минусы систем на базе Windows</p></td>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li>Уязвимость от вирусов, хакерских атак и прочих</li>
+									<li>Весьма дорогая система</li>
+									<li>Используется фрагментируемая файловая система</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="choosebutton" style="margin-left: 5%"><h1 style="margin-bottom: 0%"">Linux</h1>
+					<table>
+						<tr>
+							<td>
+								<ul>
+									<li>Ubuntu Linux</li>
+									<li>Linux Mint</li>
+									<li>Debian</li>
+									<li>Fedora</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>CentOS</li>
+									<li>openSUSE</li>
+									<li>Mandariva Linux</li>
+									<li>Arch Linux</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td><p>Плюсы систем на базе Linux</p></td>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li>Бесплатная система</li>
+									<li>Гибкая система</li>
+									<li>Небольшое количество вирусов</li>
+									<li>Отсутствие фрагментации файлов</li>
+									<li>Более быстрая загрузка по сравнению с Windows</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td><p>Минусы систем на базе Linux</p></td>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li>Многих программ, которые доступны на Windows, нет на Linux</li>
+									<li>Сложная для обычного пользователя система</li>
+									<li>Возможны проблемы с подбором драйверов</li>
+									<li>Меньшее количество пользователей</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="scrollpage" id="SoftBlock">
+			<div class="fixheight"></div>
+			<div class="other">
+
+				<h2>Программное обеспечение для: </h2>
+				<h2><span id="lbl1">Windows</span>
+					<label class="switch">
+						<input type="checkbox" name="input" id="chkb">
+						<div id="slider"></div>
+					</label>	
+					<span id="lbl2">Linux</span></h2>
+					<div id="win" class="prblock">
+						<table>
+							<tr>
+								<td style="border-right: 1px dashed white; border-bottom: 1px dashed white">
+									<p style="text-align:center; margin:0">Офисные программы общего назначения</p><br>
+									<ul>
+										<li data-title="Текстовый процессор, предназначенный для создания, просмотра и редактирования текстовых документов">Microsoft Word</li>
+										<li data-title="Программа для работы с электронными таблицами, созданная корпорацией Microsoft">Microsoft Excel</li>
+										<li data-title="Персональный информационный менеджер с функциями почтового клиента и Groupware компании Microsoft">Microsoft Outlook</li>
+										<li data-title="Самый популярный редактор растровых изображений на Windows">Adobe Photoshop</li>
+									</ul>
+								</td>
+								<td style="border-bottom: 1px dashed white">
+									<p style="text-align:center; margin:0">Автоматизация деятельности предприятия</p><br>
+									<ul>
+										<li data-title="Программный продукт компании 1С, предназначенный для автоматизации деятельности на предприятии">1C: Предприятие</li>
+										<li data-title="ERP-система, ориентированная на крупные и средние предприятия">SAP ERP</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td style="border-right: 1px dashed white">
+									<p style="text-align:center; margin:0">Средства разработки и базы данных</p><br>
+									<ul>
+										<li data-title="Cистема управления реляционными базами данных (РСУБД), разработанная корпорацией Microsoft">Microsoft SQL Server</li>
+										<li data-title="Линейка продуктов компании Microsoft, включающих интегрированную среду разработки программного обеспечения и ряд других инструментальных средств">Microsoft Visual Studio</li>
+										<li data-title="Кроссплатформенный инструментарий разработки ПО на языке программирования C++">Qt</li>
+									</ul>
+								</td>
+								<td>
+									<p style="text-align:center; margin:0">Работа с персональными данными и служебной тайной</p><br>
+									<ul>
+										<li data-title="Пусто">Пусто</li>
+										<li data-title="Пусто">Пусто</li>
+									</ul>
+								</td>
+							</tr>
+							<!-- <tr>
+								<td>1C: Предприятие</td><td>Программный продукт компании 1С, предназначенный для автоматизации деятельности на предприятии</td>
+							</tr>
+							<tr>
+								<td>SAP ERP</td><td>ERP-система, ориентированная на крупные и средние предприятия</td>
+							</tr>
+							<tr>
+								<td>Adobe Photoshop</td><td>Самый популярный редактор растровых изображений на Windows</td>
+							</tr>
+							<tr>
+								<td>Microsoft Word</td><td>Текстовый процессор, предназначенный для создания, просмотра и редактирования текстовых документов</td>
+							</tr>
+							<tr>
+								<td>Microsoft Excel</td><td>Программа для работы с электронными таблицами, созданная корпорацией Microsoft</td>
+							</tr>
+							<tr>
+								<td>Microsoft Outlook</td><td>Персональный информационный менеджер с функциями почтового клиента и Groupware компании Microsoft</td>
+							</tr> -->
+						</table>
+					</div>
+					<div id="lin" class="prblock">
+						<table>
+							<tr>
+								<td style="border-right: 1px dashed white; border-bottom: 1px dashed white">
+									<p style="text-align:center; margin:0">Офисные программы общего назначения</p><br>
+									<ul>
+										<li data-title="Текстовый процессор и визуальный редактор HTML, входящий в состав офисного пакета LibreOffice">LibreOffice Writer</li>
+										<li data-title="Табличный процессор и визуальный редактор HTML, входящий в состав офисного пакета LibreOffice">LibreOffice Calc</li>
+										<li data-title="Бесплатная кроссплатформенная свободно распространяемая программа для работы с электронной почтой, группами новостей и с календарём">Mozilla Thunderbird</li>
+										<li data-title="Бесплатный редактор растровых изображений на Linux">GIMP</li>
+									</ul>
+								</td>
+								<td style="border-bottom: 1px dashed white">
+									<p style="text-align:center; margin:0">Автоматизация деятельности предприятия</p><br>
+									<ul>
+										<li data-title="Программный продукт компании 1С, предназначенный для автоматизации деятельности на предприятии">1C: Предприятие</li>
+										<li data-title="ERP-система, ориентированная на крупные и средние предприятия">SAP ERP</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td style="border-right: 1px dashed white">
+									<p style="text-align:center; margin:0">Средства разработки и базы данных</p><br>
+									<ul>
+										<li data-title="Cвободная объектно-реляционная система управления базами данных (СУБД)">PostgreSQL</li>
+										<li data-title="Кроссплатформенный инструментарий разработки ПО на языке программирования C++">Qt</li>
+									</ul>
+								</td>
+								<td>
+									<p style="text-align:center; margin:0">Работа с персональными данными и служебной тайной</p><br>
+									<ul>
+										<li data-title="Пусто">Пусто</li>
+										<li data-title="Пусто">Пусто</li>
+									</ul>
+								</td>
+							</tr>
+							<!-- <tr>
+								<td>1C: Предприятие</td><td>Программный продукт компании 1С, предназначенный для автоматизации деятельности на предприятии</td>
+							</tr>
+							<tr>
+								<td>SAP ERP</td><td>ERP-система, ориентированная на крупные и средние предприятия</td>
+							</tr>
+							<tr>
+								<td>GIMP</td><td>Бесплатный редактор растровых изображений на Linux</td>
+							</tr>
+							<tr>
+								<td>LibreOffice Writer</td><td>Текстовый процессор и визуальный редактор HTML, входящий в состав офисного пакета LibreOffice</td>
+							</tr>
+							<tr>
+								<td>LibreOffice Calc</td><td>Табличный процессор и визуальный редактор HTML, входящий в состав офисного пакета LibreOffice</td>
+							</tr>
+							<tr>
+								<td>Mozilla Thunderbird</td><td>Бесплатная кроссплатформенная свободно распространяемая программа для работы с электронной почтой, группами новостей и с календарём</td>
+							</tr> -->
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="scrollpage" id="ContactsBlock">
+				<div class="fixheight"></div>
+				<div class="other" style="padding-top:2.5%; height: 87.5%">
+					<p align="center" style="font-size:16pt; line-height:150%">
+					<img class="map" src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=dnSy7ywPGMfUqzNFFDlqqqY9zbDG7XUj&amp;width=500&amp;height=415&amp;lang=ru_RU&amp;sourceType=constructor">
+					<span class="mhead">Вы можете связаться с нами по телефонам:</span>
+					<img src="mobile.png" style="height:15px"> 8 (499) 999-99-92<br>
+					<img src="mobile.png" style="height:15px"> 8 (982) 222-33-44
+					<span class="mhead">Или написать нам:</span>
+					<img src="email.png" style="height:15px"> outsourcing@rambler.ru<br>
+					<img src="icq.png" style="height:15px"> 414014
+					<span class="mhead">Наш офис расположен по адресу</span>
+					Москва, ул. Тверская, д. 1, кв. 1
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

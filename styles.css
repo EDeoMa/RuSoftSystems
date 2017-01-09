@@ -1,0 +1,279 @@
+body {
+	background: rgba(0,0,0,0.1);
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width:100%;
+	margin:0;
+	font-family: arial, helvetica, sans-serif;
+	padding: 0;
+	display: block;
+}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	text-align: center;
+	margin: 1% 0;
+}
+
+h2{
+	text-align: center;
+	margin: 1% 0;
+}
+
+.map{
+	margin: 0 2.5%;
+	float: right;
+    width:500px;
+    height:415px;
+}
+
+.mhead{
+	font-size: 18pt;
+	display: block;
+	font-weight: bold;
+}
+
+.menublock{
+	font-size: 14pt;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	margin: 0;
+	height:10%;
+	padding: 0;
+	display:block;
+	z-index: 9999;
+	background: rgba(0,0,0,0.5);
+	color: white;
+}
+
+.mainblock{
+	float: left;
+	margin: 0;
+	position: absolute;
+	top:0%;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.button{
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	width:10%;
+	height:100%;
+}
+
+#main {
+	
+}
+
+.button p{
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+#main p{
+	position: relative;
+}
+
+
+.choosebutton{
+	float: left;
+	width:40%;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+	height:80%;	
+	display:inline-block;
+	padding: 0;
+	background: #bbb;
+}
+
+.choosebutton p{
+	margin-top: 0%;
+	font-size: 18pt;
+	text-align: center;
+}
+
+.choosebutton li{
+	margin:1% 0;
+}
+
+.choosebutton table{
+	width:95%;
+	vertical-align: middle;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.scrollpage{
+	float: left;
+	position: relative;
+	display: inline-block;
+	padding:0;
+	margin: 0;
+	height:100%;
+	width:100%;
+}
+
+.fixheight{
+	display: block;
+	position: relative;
+	top:0;
+	left:0;
+	height: 10%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.other{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 90%;
+	width: 100%;
+	display: inline-block;
+}
+
+#MainBlock{
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#SystemsBlock{
+	background: url(windows.png),url(linux.png);
+	background-position: -30% 50%, 130% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#SystemsBlock h1{
+	margin: 2% 0 2% 0;
+}
+
+.switch {
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+#slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #2196F3;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 30px;
+}
+
+#slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 13px;
+}
+
+input:checked + #slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+#win{
+	position: absolute;
+}
+
+#lin{
+	position: absolute;
+}
+
+#SoftBlock{
+	background: url(software.png);
+	background-position: -20% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.prblock{
+	border-radius: 10px;
+	width:50%;
+	height: 70%;
+	background: #aaa;
+	margin-left: 23%;
+	padding:2%;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.prblock table{
+	margin:0;
+	border-collapse: collapse;
+	width:100%;
+	height:100%;
+}
+
+div.prblock td, div.prblock th{
+	/*border: 3px solid black;*/
+	font-size: 16pt;
+}
+
+div.prblock ul{
+	margin:0;
+}
+
+div.prblock li{
+	height: 25px;
+	margin-top: 1px;
+	background-color: #999;
+	list-style-type: none;
+}
+
+div.prblock li:hover::after {
+	width: auto;
+	display: block;
+	content: attr(data-title);
+	position: relative;
+    left: 20%;
+    top: 10%;
+    z-index: 9; /* Отображаем подсказку поверх других элементов */
+    background: rgba(0,0,0,0.7); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 12pt; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    color:white;
+}
+
+/*div.prblock td:hover{
+	opacity: 0;
+}*/
+
+/*.prblock td:first-child{
+	font-weight: bold;
+}*/
+
+.prblock td{
+	width: 50%;
+}
